@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+    background-color: #39AAE1;
+    color: #FFFFFF;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.titulo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards {
+    height: 210px;
+    display: flex;
+}
+
+.titulo h1 {
+    font-size: 40pt;
+    text-shadow: 0px 2px gray;
+    color: white;
+    width: 340px;
+}
+
+.titulo h2 {
+    font-size: 16pt;
+    text-shadow: 0px 2px gray;
+    color: white;
+    width: 300px;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.card1,
+.card2,
+.card3 {
+    flex: 1;
+    padding: 20px;
+}
+
+.card1 {
+    background-color: #39AAE1;
+}
+
+.card2 {
+    background-color: #0079c7;
+}
+
+.card3 {
+    background-color: #2B4C99;
+}
+
+.card-titulo {
+    font-size: 20pt;
+    color: white;
+}
+
+.card-descricao {
+    color: white;
+    font-size: 12pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cards a {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card3 p {
+    color: white;
+    border-bottom: .5px solid white;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex-direction: 2;
+}
+
+#geral aside {
+    flex-direction: 1;
+}
+
+.widget-title {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    color: #000000;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.widget-title-card {
+    width: 50px;
+    height: 3px;
+    background-color: #36A9E1;
+    margin-top: 25px;
+}
+
+.news_data {
+    display: flex;
+}
+
+.news_post {
+    background-color: #2B4C99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.news_comments {
+    background-color: #39AAE1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article a {
+    text-decoration: none;
+
+}
+
+article {
+    flex: 1;
+    min-width: 320px;
+    margin-right: 20px;
+}
+
+aside{
+    min-width: 200px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news_thumb {
+    margin-top: 30px;
+}
+
+.news_thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.news_title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: black;
+    font-size: 24pt;
+}
+
+.news_resume {
+    color: #5C5C5C;
+    font-size: 14pt;
+    line-height: 20px;
+    margin-bottom: 16px;
+}
+
+.box{
+    margin-top: 16px;
+}
+
+.line{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.window{
+    flex-direction: column;
+    background-color: #0079c7;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    min-width: 88px;
+    min-height: 88px;
+    
+}
+
+.links{
+    font-size: 12pt;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    border-bottom: .5px solid gray;
+}
+
+.links img{
+    margin: 8px;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 32px;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu{
+    display: flex;
+    flex: 1;
+}
+
+.fm-1,
+.fm-2,
+.fm-3{
+   
+    flex: 1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.fm-1 p,
+.fm-2 p,
+.fm-3 p{
+    font-size: 10pt;
+    margin-top: 8px;
+}
+
+.fm-1 {
+    font-weight: 800;
+    color: white;
+    padding: 20px;
+    background-color: #39AAE1;
+}
+
+.fm-2 {
+    font-weight: 800;
+    color: white;
+    padding: 20px;
+    background-color: #0079c7;
+}
+
+.fm-3 {
+    font-weight: 800;
+    color: white;
+    padding: 20px;
+    background-color: #2B4C99;
+}
+
+.footer_area_item{
+    flex: 1;
+    color: #FFFFFF;
+}
+
+.footer_area{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.flexCol{
+    flex-direction: column;
+}
+ 
+footer .widget{
+    padding-left: 16px;
+}
+footer .widget-title-text{
+    
+    color: white;
+    font-size: 16pt;
+}
+
+.footer_copy{
+    padding-left: 16px;
+    margin-top: 16px;
+    border-top: 1px solid gray;
+    color: #5C5C5C;
+    height: 40px;
+    line-height: 40px;
+    font-size: 8pt;
+}
+
+.widget-info{
+    padding-right: 32px;
+    margin-top: 16px;
+    font-size:12pt;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.widget-body ul{
+    list-style: none;
+}
+
+
+.widget-body li{
+    margin-top: 16px;
+}
+
+
+.widget-body li p{
+    font-size: 8pt;
+    color: #0079c7;
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:660px){
+
+    .titulo h1{
+        font-size: 24pt;
+    }
+
+    .titulo h2{
+        font-size: 12pt;
+    }
+
+    .cards{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #geral section, #geral aside{
+        padding: 20px;
+    }
+
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .footer_area{
+        flex-direction: column;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: none;
+    }
+
+    header{
+        height: auto;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+}
